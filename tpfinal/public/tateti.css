@@ -1,0 +1,40 @@
+.botones {
+    font-size:150px;
+    font-family:Verdana,Helvetica;
+    font-weight:bold;
+    color:rgb(0, 0, 0);
+    background:rgb(127, 151, 155);
+    border:0px;
+    width:150px;
+    height:150px;
+}
+
+#crear, #unirse{
+    font-size:20px;
+    font-family:Verdana,Helvetica;
+    font-weight:bold;
+    color:rgb(0, 0, 0);
+    background:rgb(127, 151, 155);
+    border:0px;
+    width:180px;
+    height:30px;
+    border-style: solid;
+    border-radius:35px;
+}
+
+#salas{
+    font-size:20px;
+    font-family:Verdana,Helvetica;
+    font-weight:bold;
+    color:rgb(0, 0, 0);
+  }
+
+body{
+    align-content: center;
+    background-color: rgb(161, 183, 187);
+    cursor: pointer;
+    font-size: large;
+    font-family: sans-serif;
+    font-weight: bold;
+    background-size:cover;
+  }

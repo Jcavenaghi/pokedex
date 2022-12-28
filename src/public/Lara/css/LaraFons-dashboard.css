@@ -1,0 +1,12 @@
+H1 {
+    font-size : 36pt;
+    font-family : verdana,arial;
+    text-decoration: underline black;
+    text-align : center;
+    background-color : Teal;
+    }
+Body {
+    Background-color: lightblue;
+    text-align : center;
+    font-family : verdana,arial;
+    }

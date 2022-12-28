@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+     <meta charset="utf-8">
+    </head>
+    <body>
+      <h1>Ta te ti</h1>
+      <div id="salas">
+            <button id="crear" onclick="crearSala()">Crear sala</button>
+            <input id="salaID" type="text" placeholder="id partida a la que desea unirse..">
+            <button id="unirse" onclick="unirseSala()">Unirse sala</button>
+            <div id="idSala"></div>
+      </div>
+      <div id="player"></div>
+      <div id="tabla" style="display:none">
+            <table border=0><!--creo la tabla y le paso el numero de cuadro que selecciona el jugador-->
+            <tr>
+                  <td><input type=button value="" id="btn00" class="botones" onclick="jugada(0, 0)"/> </td>
+                  <td><input type=button value="" id="btn01" class="botones" onclick="jugada(0, 1)"/> </td>
+                  <td><input type=button value="" id="btn02" class="botones" onclick="jugada(0, 2)"/> </td> 
+            </tr>
+            <tr>
+                  <td><input type=button value="" id="btn10" class="botones" onclick="jugada(1, 0)"/> </td>
+                  <td><input type=button value="" id="btn11" class="botones" onclick="jugada(1, 1)"/> </td>
+                  <td><input type=button value="" id="btn12" class="botones" onclick="jugada(1, 2)"/> </td> <br>
+            </tr>
+                  <td><input type=button value="" id="btn20" class="botones" onclick="jugada(2, 0)"/> </td>
+                  <td><input type=button value="" id="btn21" class="botones" onclick="jugada(2, 1)"/> </td>
+                  <td><input type=button value="" id="btn22" class="botones" onclick="jugada(2, 2)"/> </td>
+            </table>
+      </div>
+      <div id="mensaje"></div>
+      <div id="turno" style="display:none">Turno X</div>
+    </body>
+    <script src="./tateti.js"></script>
+    <link href="./tateti.css" rel="stylesheet" type="text/css">
+</html>
+   

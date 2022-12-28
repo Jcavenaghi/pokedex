@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <title>EJERCICIO 13</title>
+    <script src="../js/practica2/joaquinej13js.js"></script>
+    <head>
+        <body>
+            <h2>Ejercicio 13</h2>
+            <script>
+                var alice = {
+                    name : "Alice",
+                    dob : new Date(2001, 3, 4),
+                    height : 165,
+                    weight : 68
+                };
+                var bob = {
+                    name : "Robert",
+                    dob : new Date(1997, 0, 31),
+                    height : 170,
+                    weight : 88
+                };
+                var charly = {
+                    name : "Charles",
+                    dob : new Date(1978, 9, 15),
+                    height : 188,                   
+                    weight : 102
+                };
+                var lucy = {
+                    name : "Lucía",
+                    dob : new Date(1955, 7, 7),
+                    height : 155,
+                    weight : 61
+                };
+                var peter = {
+                    name : "Peter",
+                    dob : new Date(1988, 2, 9),
+                    height : 165,
+                    weight : 99
+                };
+                var luke = {
+                    name : "Lucas",
+                    dob : new Date(1910, 11, 4),
+                    height : 172,
+                    weight : 75
+                };
+                const personas = [alice, bob, charly, lucy, peter, luke]; //para manejar mejor los objetos
+                var nueArray = personas.filter(IMCmas25);                 // Nuevo array con personas de IMC > 25
+                console.log(nueArray.map(mapear));                        // Mapeamos, dejando a ese nueArray con los nombres de las personas unicamente
+                var arrayEdades= personas.map(mapNomEdad);                //array con las edades de las personas
+                console.log(arrayEdades);                                 //Imprimimos
+                var arrayIMC =personas.filter(edadMAS40);                 //array con las personas de +40
+                arrayIMC = arrayIMC.map(mapIMC);                           //array con los IMC de esas personas(sobreescribo)
+                console.log(arrayIMC);                                    //Imprimimos
+                var totalIMCs = personas.map(mapIMC).reduce(acumular, 0); //arreglo con todos los IMC
+                console.log(totalIMCs);                                   //Imprimimos
+                var edades = personas.map(edadesP);                       //arreglo con todas las edades
+                edades = edades.sort((edad, edadAct) => edad - edadAct);  //arreglo ordenado por edades
+                console.log(edades[0]);
+                console.log("creo un arreglo con las estaturas");
+                var arrayEstatura = personas.map(mapEstaturas);
+                arrayEstatura.sort(ordenarEstaturas);
+                console.log(arrayEstatura);
+            </script>
+        </body>
+    </head>
+</html>

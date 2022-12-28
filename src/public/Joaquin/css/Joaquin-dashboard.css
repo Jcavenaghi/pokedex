@@ -1,0 +1,23 @@
+body {
+    background-image:url(../img/fondo-Blanco.jpg);
+    background-size: cover;
+}
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    text-decoration: underline;
+    color:black;
+}
+h2 {
+    font-size: 32px;                    /* Tamaño */
+    font-weight: bold;                  /* Negrita */
+    text-decoration: underline;         /* Subrayado */
+}
+li {
+    color:orangered;
+}
+a {
+    text-decoration: none;
+    color:mediumpurple;
+    font-weight: bold;
+}

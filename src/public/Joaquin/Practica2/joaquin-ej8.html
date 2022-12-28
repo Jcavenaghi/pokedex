@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <title>EJERCICIO 8</title>
+    <script src="../js/practica2/joaquinej8js.js"></script>
+    <head>
+        <h1>Ejercicio 8</h1>
+        <body>
+            <script>
+                var prices = {
+                    MILK: 48.90,
+                    BREAD: 90.50,
+                    BUTTER: 130.12
+                };
+                var amounts = {
+                    MILK: 1,
+                    BREAD: 0.5,
+                    BUTTER: 0.2
+                }
+                var amounts2 = {
+                    BREAD: 1.5
+                };
+                console.log(typeof prices); //object
+                console.log(prices.BREAD);  //90.5
+                console.log(amounts["MILK"]); //1
+                console.log(total(prices,amounts));
+                console.log(total(prices,amounts2));
+            </script>
+        </body>
+    </head>
+</html>

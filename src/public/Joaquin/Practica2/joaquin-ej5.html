@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <title>EJERCICIO 5</title>
+    <script src="../js/practica2/joaquinjs.js"></script>
+    <head>
+        <h1>EJERCICIO 5</h1>
+        <body>
+            <p style="color:red;">just.. enjoy</p>
+           <script>
+                var a = [1,2,3,4];
+                var b = [1,2,3,4];
+                var c = [1,2,3,4,5];
+                var d = "Hola";
+                var e = null;
+                console.log(arrayEquals(a, a)); //deberia ser true. Imprime: true
+                console.log(arrayEquals(a, b)); //deberia ser true. Imprime: true
+                console.log(arrayEquals(b, c)); //deberia ser false. Imprime: false
+                console.log(arrayEquals(e, c)); //deberia ser false. Imprime: false
+                console.log(arrayEquals(c, d)); //deberia ser false. Imprime: false
+                console.log(arrayEquals(e, e)); //deberia ser true. Imprime: false
+           </script> 
+        </body>
+    </head>
+</html>

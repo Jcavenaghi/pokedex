@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <title>EJERCICIO 2</title>
+    <script src="../js/practica3/joaquin-ej2.js"></script>
+    <head>
+        <h2>Ejercicio 2 </h2>
+    </head>
+    <body>
+        <script>
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = stateChangeHandler;
+            xhttp.open("GET", "https://aws.random.cat/meow", true);
+            xhttp.send();
+            /*RESPUESTAS A p2
+                1) "GET" significa que busca un archivo en en el enlace https://aws.random.cat/meow
+                2) "true" indica que todo va a ser de forma asincrona
+                3) Se la invoca 4 veces.
+                4) 1 significa LOADING. que todavía no se llamó a send(). 2	LOADED. 
+                send() ya fue invocado, y los encabezados y el estado están disponibles. 
+                3 INTERACTIVE. Descargando; responseText contiene información parcial. y 4, COMPLETED. La operación está terminada.
+                5) hace referencia al objeto Al objeto xmlhttprequest que posee el atributo state.
+                6) Access-Control-Allow-Methods: GET y Access-Control-Allow-Origin: *
+                7) GET significa que tiene acceso a todos los metodos de control que permite GET. y * Significa que importa todo.
+                8) 
+
+            */
+        </script>
+    </body>
+</html>

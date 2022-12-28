@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PIEDRA, PAPEL, TIJERA, LAGARTO, SPOCK</title>
+        <link rel="stylesheet" href="rpsls.css">
+    </head>
+    <body id="body">
+        <h1>PIEDRA, PAPEL, TIJERAS, LAGARTO, SPOCK</h1>
+        <div class="container">
+            <button id="btnPrincipal" onclick="crearSala()" style="margin-left: 670px;">Crear sala</button>
+            <input id="salaID" type="text" placeholder="id partida a la que desea unirse..">
+            <button id="btnPrincipal" onclick="unirseSala()">Unirse sala</button>
+            <br>
+            <div id="idSala"></div>
+            <br>
+            <br>
+            <div id="container-opc" style="display:none;">
+                <button id="btn" onclick="opcion(0)"><img src="./img/rock.png" alt="rock" width="75" height="75"></button> <!-- Cada numero hace referencia a su respectiva opcion( 0 = piedra, 1= papel, ....)-->
+                <button id="btn" onclick="opcion(1)"><img src="./img/paper.png" alt="paper" width="75" height="75"></button>
+                <button id="btn" onclick="opcion(2)"><img src="./img/scissors1.png" alt="scissors" width="75" height="75"></button>
+                <button id="btn" onclick="opcion(3)"><img src="./img/lizard.png" alt="lizard" width="75" height="75"></button>
+                <button id="btn" onclick="opcion(4)"><img src="./img/spock.png" alt="spock" width="75" height="75"></button>
+            </div>
+            <div id="res-text"></div>
+            <br>
+            <div id="res-desc"></div>
+        </div>
+        <script src="./rpsls.js"></script>
+    </body>
+</html>

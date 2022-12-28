@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <script src="../js/practica2/joaquinjs.js"></script>
+    <title>EJERCICIO 6</title>
+    <head>
+        <h1>Ejercicio 6</h1>
+        <body>
+            <script>
+                console.log(isInteger(2)); // retorna true ------------------ true
+                console.log(isInteger(2.0)); // retorna true ------------------ true
+                console.log(isInteger(2.1)); // retorna false ------------------ false
+                console.log(isInteger(-10)); // retorna true ------------------ true
+                console.log(isInteger([1])); // retorna false ------------------ false
+                console.log(isInteger("2")); // retorna false ------------------ false
+                console.log(isInteger(true)); // retorna false ------------------ false
+                console.log(isInteger(null)); // retorna false ------------------ false
+                var num;
+                console.log(isInteger(num)); // retorna false ------------------ false
+            </script>
+        </body>
+    </head>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <script src="../js/practica2/joaquinej9js.js"></script>
+    <title>EJERCICIO 9</title>
+    <head>
+        <h1>Ejercicio 9</h1>
+        <body>
+            <script>
+            var words = ['perro', 'gato', 'casa', 
+                    'árbol', 'nube', 'día', 'noche', 
+                    'zanahoria', 'babuino'];
+            var atoz = words.sort((a,b) => a.localeCompare(b));
+            imprimir(atoz);
+            imprimir(atoz.reverse()); //Lo imprime de atras hacia adelante.
+             const ascendente = words.sort((a,b) => a.length - b.length); //lo imprime ordenado
+            imprimir(ascendente);
+            </script>
+        </body>
+</html>

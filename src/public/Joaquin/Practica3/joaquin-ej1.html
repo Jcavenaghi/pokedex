@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <title>ERJERCICIO 1</title>
+    <script src="../js/practica3/joaquin-ej1.js"></script>
+    <head>
+        <h2>Ejercicio 1</h2>
+    </head>
+    <body>
+        <script>
+            var jsonStr = '['
+            + '{"name":"Alice","dob": "20010304T00:00:00.000Z","h": 165,"w": 68},'
+            + '{"name":"Robert","dob": "19970131T00:00:00.000Z","h": 170,"w": 88},'
+            + '{"name":"Charles","dob": "19781015T00:00:00.000Z","h": 188,"w": 102},'
+            + '{"name":"Lucía","dob": "19550807T00:00:00.000Z","h": 155,"w": 61},'
+            + '{"name":"Peter","dob": "19880309T00:00:00.000Z","h": 165,"w": 99},'
+            + '{"name":"Lucas","dob": "19101204T00:00:00.000Z","h": 172,"w": 75}]';
+            personas1 = JSON.parse(jsonStr);
+            console.log(overweightNames(personas1));
+        </script>
+    </body>
+</html>
